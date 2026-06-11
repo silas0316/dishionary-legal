@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use — Dishionary</title>
+    <style>
+        @font-face {
+            font-family: 'OleoScript';
+            src: url('OleoScript-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'OleoScript';
+            src: url('OleoScript-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+        :root {
+            --black-main: #1C1C1C;
+            --black-500: #2C2C2C;
+            --black-300: #6B6B6B;
+            --white: #FFFFFF;
+            --meal-card-bg: #F5E2B9;
+            --green-dark: #004327;
+            --red-main: #F23F19;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.4;
+            color: var(--black-500);
+            background-color: var(--meal-card-bg);
+            background-image: url('background-paper.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .app-name {
+            font-family: 'OleoScript', serif;
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--red-main);
+            margin-bottom: 4px;
+        }
+
+        .page-title {
+            font-family: 'OleoScript', serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--black-500);
+        }
+
+        .last-updated {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--black-300);
+            margin-top: 8px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        h2 {
+            font-family: 'OleoScript', serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.4;
+            color: var(--black-main);
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: var(--black-500);
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--black-300);
+            margin-bottom: 8px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 12px;
+        }
+
+        ul:last-child {
+            margin-bottom: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 6px;
+            color: var(--black-500);
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background: var(--green-dark);
+            border-radius: 50%;
+        }
+
+        .warning {
+            background: #FFF3F0;
+            border-left: 4px solid var(--red-main);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+        }
+
+        .warning:last-child {
+            margin-bottom: 0;
+        }
+
+        .warning p {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            background: var(--meal-card-bg);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+        }
+
+        .highlight:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--green-dark);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        a:hover {
+            color: var(--red-main);
+        }
+
+        .contact-card {
+            background: var(--green-dark);
+            color: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .contact-card h2 {
+            color: var(--white);
+        }
+
+        .contact-card p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .contact-card a {
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-name">Dishionary</div>
+            <div class="page-title">Terms of Use</div>
+            <div class="last-updated">Last updated: June 10, 2026</div>
+        </div>
+
+        <div class="card">
+            <h2>Acceptance of Terms</h2>
+            <p>By downloading, installing, or using Dishionary ("the app"), you agree to be bound by these Terms of Use. If you do not agree to these terms, do not use the app.</p>
+            <p>We reserve the right to update these terms at any time. Continued use of the app after changes constitutes acceptance of the updated terms.</p>
+        </div>
+
+        <div class="card">
+            <h2>Eligibility</h2>
+            <p>You must be at least 13 years old to use Dishionary. By using the app, you represent that you meet this age requirement. If you are under 18, you should review these terms with a parent or guardian.</p>
+        </div>
+
+        <div class="card">
+            <h2>User Accounts</h2>
+            <p>Dishionary does not require or support user accounts. No registration, login, or personal profile is needed to use the app. All user data (scan history, allergen preferences) is stored locally on your device.</p>
+        </div>
+
+        <div class="card">
+            <h2>Acceptable Use</h2>
+            <p>You agree to use Dishionary only for its intended purpose: translating restaurant menus for personal use. You agree not to:</p>
+            <ul>
+                <li>Use automated tools, bots, or scripts to access the service or make bulk translation requests.</li>
+                <li>Attempt to reverse engineer, decompile, or disassemble the app or its backend services.</li>
+                <li>Interfere with or disrupt the app's servers, networks, or infrastructure.</li>
+                <li>Use the service to violate any applicable law or regulation.</li>
+                <li>Circumvent rate limiting or other protective measures.</li>
+                <li>Redistribute, resell, or commercially exploit the translations or any content generated by the app without prior written permission.</li>
+            </ul>
+            <p>We reserve the right to restrict or terminate access to the service for any user who violates these terms.</p>
+        </div>
+
+        <div class="card">
+            <h2>Intellectual Property</h2>
+            <p>All content, design, code, trademarks, and intellectual property associated with Dishionary — including the app name, logo, user interface design, and underlying technology — are owned by Chia Le Luan and are protected by applicable intellectual property laws.</p>
+            <p>Translations generated by the app are provided for your personal use. You may not reproduce, distribute, or commercially exploit the translations or any other output of the service without prior written permission.</p>
+            <p>The dish information, cultural stories, and descriptions provided by the app are generated by artificial intelligence and are intended for informational purposes only.</p>
+        </div>
+
+        <div class="card">
+            <h2>Subscription and Payments</h2>
+            <p>Dishionary offers a credit-based system for menu translations:</p>
+            <ul>
+                <li><strong>3 free translations</strong> are provided upon installation.</li>
+                <li>Additional translation credits can be purchased through in-app purchases (e.g., 10 credits for $1.99, 30 credits for $4.99).</li>
+                <li>Purchased credits <strong>do not expire</strong> and remain available for as long as the app is installed on your device.</li>
+            </ul>
+            <p>All purchases are processed by Apple through the App Store. We do not collect or store your payment information. Prices are subject to change, but any changes will not affect credits you have already purchased.</p>
+            <div class="highlight">
+                <p>If you wish to request a refund, please contact Apple through their standard refund process at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. Refund eligibility is determined by Apple in accordance with their refund policies.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Disclaimer</h2>
+            <p>Dishionary is provided on an "as is" and "as available" basis without warranties of any kind, either express or implied.</p>
+            <div class="warning">
+                <p><strong>Important:</strong> The translations, ingredient lists, allergen information, and dietary details provided by Dishionary are generated by artificial intelligence and may not be 100% accurate. This information is for reference purposes only and should not be relied upon as medical or dietary advice. If you have food allergies or dietary restrictions, always confirm ingredients and allergens directly with the restaurant staff before ordering. Dishionary is not responsible for any adverse reactions resulting from reliance on the app's translations or allergen information.</p>
+            </div>
+            <p>We do not guarantee that the app will be available at all times, error-free, or that the translations will be completely accurate.</p>
+        </div>
+
+        <div class="card">
+            <h2>Limitation of Liability</h2>
+            <p>To the maximum extent permitted by applicable law, Chia Le Luan shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of Dishionary.</p>
+            <p>This includes, but is not limited to, damages arising from:</p>
+            <ul>
+                <li>Inaccurate translations or allergen information.</li>
+                <li>Service interruptions or unavailability.</li>
+                <li>Loss of data stored on your device.</li>
+                <li>Unauthorized access to your device or data.</li>
+            </ul>
+            <p>Our total liability for any claim arising from your use of the app shall not exceed the amount you paid for the app or in-app purchases in the twelve (12) months preceding the claim.</p>
+        </div>
+
+        <div class="card">
+            <h2>Termination</h2>
+            <p>You may stop using Dishionary at any time by deleting the app from your device. Upon deletion, all locally stored data (scan history, allergen preferences) will be removed.</p>
+            <p>We reserve the right to suspend or terminate access to the service at any time, for any reason, including violation of these Terms of Use. If your access is terminated due to a violation, purchased credits may be forfeited.</p>
+            <p>If the service is discontinued by us, you may request a refund for unused purchased credits through Apple's standard refund process.</p>
+        </div>
+
+        <div class="card">
+            <h2>Governing Law</h2>
+            <p>These Terms of Use shall be governed by and construed in accordance with the laws of the State of Illinois, United States, without regard to its conflict of law provisions.</p>
+            <p>Any disputes arising from these terms or your use of Dishionary shall be resolved in the courts located in the State of Illinois.</p>
+        </div>
+
+        <div class="contact-card">
+            <h2>Contact Information</h2>
+            <p>If you have questions or concerns about these Terms of Use, please contact us:</p>
+            <p><strong>Developer:</strong> Chia Le Luan<br><strong>Email:</strong> <a href="mailto:silas0316@gmail.com">silas0316@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>

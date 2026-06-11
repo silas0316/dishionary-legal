@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Dishionary</title>
+    <style>
+        @font-face {
+            font-family: 'OleoScript';
+            src: url('OleoScript-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'OleoScript';
+            src: url('OleoScript-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+        :root {
+            --black-main: #1C1C1C;
+            --black-500: #2C2C2C;
+            --black-300: #6B6B6B;
+            --white: #FFFFFF;
+            --meal-card-bg: #F5E2B9;
+            --green-dark: #004327;
+            --red-main: #F23F19;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.4;
+            color: var(--black-500);
+            background-color: var(--meal-card-bg);
+            background-image: url('background-paper.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .app-name {
+            font-family: 'OleoScript', serif;
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--red-main);
+            margin-bottom: 4px;
+        }
+
+        .page-title {
+            font-family: 'OleoScript', serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--black-500);
+        }
+
+        .last-updated {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--black-300);
+            margin-top: 8px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        h2 {
+            font-family: 'OleoScript', serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.4;
+            color: var(--black-main);
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: var(--black-500);
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--black-300);
+            margin-bottom: 8px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 12px;
+        }
+
+        ul:last-child {
+            margin-bottom: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 6px;
+            color: var(--black-500);
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background: var(--green-dark);
+            border-radius: 50%;
+        }
+
+        .highlight {
+            background: var(--white);
+            border: 2px solid var(--black-500);
+            border-radius: 4px;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+            box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .highlight:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+        }
+
+        .service-name {
+            font-weight: 700;
+            color: var(--black-main);
+        }
+
+        a {
+            color: var(--green-dark);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        a:hover {
+            color: var(--red-main);
+        }
+
+        .contact-card {
+            background: var(--green-dark);
+            color: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .contact-card h2 {
+            color: var(--white);
+        }
+
+        .contact-card p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .contact-card a {
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-name">Dishionary</div>
+            <div class="page-title">Privacy Policy</div>
+            <div class="last-updated">Last updated: June 10, 2026</div>
+        </div>
+
+        <div class="card">
+            <h2>Introduction</h2>
+            <p>Dishionary ("we," "our," or "the app") is a mobile application developed by Chia Le Luan that translates foreign restaurant menus using artificial intelligence.</p>
+            <p>This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data.</p>
+            <p>We are committed to protecting your privacy. Dishionary is designed to work without user accounts, and we minimize data collection to only what is necessary for the app to function.</p>
+        </div>
+
+        <div class="card">
+            <h2>Information We Collect</h2>
+
+            <p class="label">Information you provide:</p>
+            <ul>
+                <li><strong>Menu photos</strong> — When you use Dishionary, you take or upload photos of restaurant menus. These photos are sent to our server for processing and are immediately discarded after translation. We do not store your photos.</li>
+                <li><strong>Allergen preferences</strong> — You may select allergens to flag in translations. These selections are stored only on your device and are never sent to our servers.</li>
+            </ul>
+
+            <p class="label">Information collected automatically:</p>
+            <ul>
+                <li><strong>IP address hash</strong> — We create a one-way, irreversible hash of your IP address solely for rate limiting purposes (to prevent abuse). The original IP address is never stored.</li>
+                <li><strong>Anonymous usage data</strong> — We log basic, non-identifiable scan statistics such as the number of dishes found, processing time, and error counts. This data cannot be linked to any individual user.</li>
+            </ul>
+
+            <p class="label">Information we do NOT collect:</p>
+            <ul>
+                <li>Names, email addresses, or contact information</li>
+                <li>Location data</li>
+                <li>Device identifiers or advertising IDs</li>
+                <li>Browsing history or app usage patterns</li>
+                <li>Payment or financial information (all purchases are handled by Apple)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>How We Use Information</h2>
+            <ul>
+                <li><strong>Translate menu photos</strong> — Your photos are processed through Google Gemini AI to extract and translate dish information, then immediately discarded.</li>
+                <li><strong>Prevent abuse</strong> — IP address hashes are used to enforce rate limits and protect our service.</li>
+                <li><strong>Improve the service</strong> — Anonymous, aggregated scan statistics help us understand general usage patterns.</li>
+                <li><strong>Cache translations</strong> — We maintain an anonymous cache of dish translations (keyed by dish name, not by user) so common dishes can be translated faster for all users.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Third-Party Services</h2>
+
+            <div class="highlight">
+                <p><span class="service-name">Google Gemini AI (Google LLC)</span><br>Menu photos are sent to Google's Gemini API for processing. Google processes the images to extract dish information and returns the results to our server. Photos are transmitted securely and are not stored by our service after processing. Google's use of data is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+            </div>
+
+            <div class="highlight">
+                <p><span class="service-name">Supabase (Supabase Inc.)</span><br>We use Supabase to host our backend server and database. Supabase stores only anonymous dish translation caches, rate limit hashes, and aggregated scan logs. No personal data is stored in our database.</p>
+            </div>
+
+            <div class="highlight">
+                <p><span class="service-name">Apple (App Store &amp; StoreKit)</span><br>In-app purchases are processed entirely by Apple through StoreKit. We never receive, process, or store your payment information. Apple's handling of purchase data is governed by <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Data Storage and Security</h2>
+
+            <p class="label">On your device:</p>
+            <ul>
+                <li>Scan history (photos and translations) is stored locally on your device in the app's private storage. This data is not accessible to other apps and is deleted when you uninstall Dishionary.</li>
+                <li>Allergen preferences are stored on your device only.</li>
+            </ul>
+
+            <p class="label">On our servers:</p>
+            <ul>
+                <li>Menu photos are processed in memory and immediately discarded. They are never written to disk or stored in our database.</li>
+                <li>Dish translation caches are stored anonymously (keyed by dish name only, with no link to any user).</li>
+                <li>IP address hashes are stored temporarily for rate limiting and automatically expire.</li>
+            </ul>
+
+            <p>We use HTTPS encryption for all data transmitted between your device and our servers.</p>
+        </div>
+
+        <div class="card">
+            <h2>User Rights</h2>
+
+            <p class="label">For all users:</p>
+            <ul>
+                <li>You can delete your local scan history by uninstalling the app.</li>
+                <li>You can use the app without providing any personal information.</li>
+            </ul>
+
+            <p class="label">For users in the European Economic Area (GDPR):</p>
+            <ul>
+                <li>Right to access, rectify, or erase your personal data.</li>
+                <li>Right to restrict or object to processing.</li>
+                <li>Right to data portability.</li>
+                <li>Since we do not collect identifiable personal data, these rights are largely satisfied by design.</li>
+            </ul>
+
+            <p class="label">For users in California (CCPA):</p>
+            <ul>
+                <li>Right to know what personal information is collected.</li>
+                <li>Right to request deletion of personal information.</li>
+                <li>Right to opt out of the sale of personal information. We do not sell any personal information.</li>
+            </ul>
+
+            <p>To exercise any of these rights, contact us at <a href="mailto:silas0316@gmail.com">silas0316@gmail.com</a>.</p>
+        </div>
+
+        <div class="card">
+            <h2>Children's Privacy</h2>
+            <p>Dishionary is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. Since the app does not require account creation and does not collect personal data, children's privacy is protected by design.</p>
+            <p>If you believe a child has somehow provided us with personal information, please contact us at <a href="mailto:silas0316@gmail.com">silas0316@gmail.com</a>.</p>
+        </div>
+
+        <div class="card">
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last updated" date at the top of this policy. Your continued use of Dishionary after any changes constitutes acceptance of the updated policy.</p>
+        </div>
+
+        <div class="contact-card">
+            <h2>Contact Information</h2>
+            <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
+            <p><strong>Developer:</strong> Chia Le Luan<br><strong>Email:</strong> <a href="mailto:silas0316@gmail.com">silas0316@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
