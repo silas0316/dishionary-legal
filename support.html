@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — Dishionary</title>
+    <style>
+        @font-face {
+            font-family: 'OleoScript';
+            src: url('OleoScript-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'OleoScript';
+            src: url('OleoScript-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+        :root {
+            --black-main: #1C1C1C;
+            --black-500: #2C2C2C;
+            --black-300: #6B6B6B;
+            --white: #FFFFFF;
+            --meal-card-bg: #F5E2B9;
+            --green-dark: #004327;
+            --red-main: #F23F19;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--black-300);
+            background-color: var(--meal-card-bg);
+            background-image: url('background-paper.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .app-name {
+            font-family: 'OleoScript', serif;
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--red-main);
+            margin-bottom: 4px;
+        }
+
+        .page-title {
+            font-family: 'OleoScript', serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.4;
+            color: var(--black-500);
+        }
+
+        .page-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--black-300);
+            margin-top: 8px;
+        }
+
+        .section {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        h2 {
+            font-family: 'OleoScript', serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.4;
+            color: var(--black-main);
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: var(--black-300);
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--black-300);
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 12px;
+        }
+
+        ul:last-child {
+            margin-bottom: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 6px;
+            color: var(--black-300);
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background: var(--green-dark);
+            border-radius: 50%;
+        }
+
+        .highlight {
+            background: var(--white);
+            border: 2px solid var(--black-500);
+            border-radius: 4px;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+            box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .highlight:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+        }
+
+        .warning {
+            background: #FFF3F0;
+            border-left: 4px solid var(--red-main);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+        }
+
+        .warning:last-child {
+            margin-bottom: 0;
+        }
+
+        .warning p {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--green-dark);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        a:hover {
+            color: var(--red-main);
+        }
+
+        .contact-card {
+            background: var(--green-dark);
+            color: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+            margin-bottom: 16px;
+        }
+
+        .contact-card h2 {
+            color: var(--white);
+        }
+
+        .contact-card p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .contact-card a {
+            color: var(--white);
+        }
+
+        .screenshot-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .screenshot-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .screenshot-gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: var(--green-dark);
+            color: var(--white);
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: 700;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .step p {
+            margin-bottom: 0;
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-item {
+            margin-bottom: 16px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: var(--black-500);
+            margin-bottom: 4px;
+        }
+
+        .legal-link {
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        .legal-link a {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--black-300);
+            opacity: 0.6;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-name">Dishionary</div>
+            <div class="page-title">Support</div>
+            <div class="page-subtitle">We're here to help you get the most out of Dishionary.</div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="section">
+            <h2>How Dishionary Works</h2>
+            <p>Dishionary translates foreign restaurant menus using AI. Here's how to use it:</p>
+
+            <div class="step">
+                <span class="step-number">1</span>
+                <p><strong>Select your allergens</strong> — Tell us about any food allergies so we can flag them in translations.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <p><strong>Take or upload menu photos</strong> — Use your camera or upload up to 5 photos of the menu.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <p><strong>Tap "Translate the Menu"</strong> — Our AI reads every dish and provides English translations, descriptions, ingredients, allergen alerts, and cultural stories.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">4</span>
+                <p><strong>Explore your results</strong> — Tap any dish card to see full details. Use the diet filter to narrow results. Build your order list.</p>
+            </div>
+
+            <div class="screenshot-gallery">
+                <img src="images/01.png" alt="Landing screen" onclick="openLightbox(this)">
+                <img src="images/02.png" alt="Allergen selection" onclick="openLightbox(this)">
+                <img src="images/03.png" alt="Menu photo capture" onclick="openLightbox(this)">
+                <img src="images/04.png" alt="Translation results" onclick="openLightbox(this)">
+                <img src="images/05.png" alt="Dish details expanded" onclick="openLightbox(this)">
+                <img src="images/06.png" alt="Diet filter" onclick="openLightbox(this)">
+                <img src="images/07.png" alt="Order list" onclick="openLightbox(this)">
+                <img src="images/08.png" alt="Scan history" onclick="openLightbox(this)">
+                <img src="images/09.png" alt="Translation credits" onclick="openLightbox(this)">
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <p class="faq-question">What languages does Dishionary support?</p>
+                <p>Dishionary can translate menus in most languages, including Chinese, Japanese, Korean, Thai, Vietnamese, French, Spanish, Italian, German, and many more. The AI automatically detects the language of your menu.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">How accurate are the translations?</p>
+                <p>Dishionary uses Google Gemini AI to provide high-quality translations. While we strive for accuracy, AI-generated translations may not be 100% perfect. If you have food allergies, always confirm with restaurant staff.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">How do translation credits work?</p>
+                <p>You get 3 free translations when you install the app. Each "Translate the Menu" action uses 1 credit, regardless of how many photos or dishes are on the menu. Additional credits can be purchased in packs of 10 ($1.99) or 30 ($4.99). Purchased credits never expire.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Can I use Dishionary offline?</p>
+                <p>No, Dishionary requires an internet connection to translate menus. The AI processing happens on our servers. However, your past scan history is saved locally on your device and can be viewed offline.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">How do I restore my purchased credits on a new device?</p>
+                <p>Go to the Paywall screen and tap "Bought translations before? Click here for restore." This will restore any previously purchased credits linked to your Apple ID.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Is my data private?</p>
+                <p>Yes. Dishionary does not require an account. Menu photos are processed and immediately discarded — we never store them. Allergen preferences and scan history are stored only on your device. See our <a href="index.html">Privacy Policy</a> for full details.</p>
+            </div>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div class="section">
+            <h2>Troubleshooting</h2>
+
+            <div class="faq-item">
+                <p class="faq-question">The translation is taking too long</p>
+                <p>Translation time depends on the number of photos and dishes. Typically it takes 15-30 seconds. Make sure you have a stable internet connection. If it fails, try again with fewer photos or a clearer image.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">"No Dishes Found" error</p>
+                <p>This means the AI couldn't detect any menu items in your photo. Try taking a clearer, well-lit photo of the menu text. Avoid blurry images, extreme angles, or photos with heavy shadows.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">"Too Many Requests" error</p>
+                <p>You've hit the rate limit. Wait a moment and try again. This limit exists to prevent abuse and ensure the service is available for everyone.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">My purchased credits didn't appear</p>
+                <p>Try tapping "Click here for restore" on the Paywall screen. If the issue persists, make sure your Apple ID has a valid payment method and that the purchase was completed. You can also check your purchase history in Settings > Apple ID > Subscriptions & Purchases.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">The allergen alerts seem incorrect</p>
+                <div class="warning">
+                    <p>Allergen information is AI-generated and may not be 100% accurate. Always confirm allergens directly with restaurant staff before ordering, especially if you have severe allergies.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tips -->
+        <div class="section">
+            <h2>Tips for Best Results</h2>
+            <ul>
+                <li><strong>Good lighting</strong> — Take photos in well-lit conditions for the clearest text recognition.</li>
+                <li><strong>Flat angle</strong> — Hold your phone parallel to the menu to avoid distortion.</li>
+                <li><strong>Full page</strong> — Capture the entire menu page so no dishes are cut off.</li>
+                <li><strong>Multiple pages</strong> — Use up to 5 photos to capture large menus across multiple pages.</li>
+                <li><strong>Set allergens first</strong> — Select your allergens before translating so the AI can flag matching ingredients.</li>
+            </ul>
+        </div>
+
+        <!-- Refunds -->
+        <div class="section">
+            <h2>Refunds</h2>
+            <p>All purchases are processed by Apple. If you'd like to request a refund, please visit Apple's refund page:</p>
+            <div class="highlight">
+                <p><a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a></p>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-card">
+            <h2>Contact Us</h2>
+            <p>Can't find what you're looking for? We'd love to hear from you.</p>
+            <p><strong>Developer:</strong> Chia Le Luan<br><strong>Email:</strong> <a href="mailto:silas0316@gmail.com">silas0316@gmail.com</a></p>
+            <p>We typically respond within 48 hours.</p>
+        </div>
+
+        <div class="legal-link">
+            <a href="index.html">Privacy Policy & Terms of Use</a>
+        </div>
+    </div>
+
+    <!-- Lightbox for screenshots -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Screenshot preview">
+    </div>
+
+    <script>
+        function openLightbox(el) {
+            document.getElementById('lightbox-img').src = el.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
